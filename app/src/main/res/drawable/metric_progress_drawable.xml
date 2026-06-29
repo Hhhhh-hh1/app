@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景圆角轨道 -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="4dp" />
+            <solid android:color="#1F2438" />
+        </shape>
+    </item>
+    <!-- 进度填充渐变 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="4dp" />
+                <gradient
+                    android:startColor="@color/grad_start"
+                    android:endColor="@color/grad_end"
+                    android:angle="0" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

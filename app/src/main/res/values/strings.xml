@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">图像画质分析工具</string>
+    <string name="choose_image">选择图片</string>
+</resources>
+

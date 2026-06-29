@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/card_background"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <!-- 左侧图片预览 -->
+    <ImageView
+        android:id="@+id/sampleImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:background="#333333" />
+
+    <!-- 右侧信息区 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fileNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_main"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:ellipsize="middle"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_sub"
+                android:textSize="12sp"
+                android:text="App实际评分: " />
+
+            <TextView
+                android:id="@+id/actualScoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accent"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="等待分析..." />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/noteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:hint="点此输入人工判断预期或反例分析..."
+            android:textColorHint="@color/text_sub"
+            android:textColor="@color/text_main"
+            android:textSize="12sp"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:maxLines="2" />
+            
+        <TextView
+            android:id="@+id/clickHintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="点击进入查看完整指标"
+            android:textColor="@color/primary"
+            android:textSize="11sp"
+            android:textAlignment="center"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

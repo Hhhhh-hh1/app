@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基础背景与面板色 -->
+    <color name="background">#0B0E14</color>
+    <color name="panel">#151926</color>
+    <color name="border">#23293F</color>
+
+    <!-- 主色与发光渐变色 -->
+    <color name="primary">#6C5DD3</color>
+    <color name="primary_dark">#080A0F</color>
+    <color name="accent">#FF7551</color>
+    <color name="grad_start">#6C5DD3</color>
+    <color name="grad_end">#A076F9</color>
+
+    <!-- 文本颜色 -->
+    <color name="text_main">#FFFFFF</color>
+    <color name="text_sub">#8A94A6</color>
+
+    <!-- 状态评分颜色 -->
+    <color name="score_excellent">#00F2FE</color>
+    <color name="score_good">#3B82F6</color>
+    <color name="score_fair">#FFA048</color>
+    <color name="score_poor">#FF5C5C</color>
+</resources>
+
